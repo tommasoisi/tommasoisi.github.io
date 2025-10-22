@@ -2,5 +2,5 @@
 
 Experimental Physicist & Data Acquisition Engineer.
 
-- [Download CV](assets/Tommaso_Isidori_CV.pdf){:target="_blank"}
+- [Download CV](assets/Tommaso_Isidori_CV.pdf)
 - [Publications](publications.md)
