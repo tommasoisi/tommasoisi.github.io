@@ -1,24 +1,52 @@
-site_name: Tommaso Isidori
-site_description: Experimental Physicist & Data Acquisition Engineer
-repo_url: https://github.com/tommasoisi/tommasoisi.github.io
+site_name: "Tommaso Isidori"
+site_description: "Experimental Physicist & Data Acquisition Engineer"
+site_author: "Tommaso Isidori"
+site_url: "https://tommasoisi.github.io/tommasoisi.github.io/"
+
 theme:
   name: material
   palette:
-    primary: 'red'
-    accent: 'amber'
+    primary: indigo
+    accent: pink
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: "assets/images/favicon.png"
+  logo: "assets/images/favicon.png"
   features:
-    - navigation.instant
+    - navigation.tabs
     - navigation.sections
+    - toc.integrate
+    - content.code.annotate
     - content.code.copy
+    - content.action.edit
+    - search.highlight
+    - search.suggest
+
 nav:
   - Home: index.md
+  - About: about.md
   - CV: cv.md
   - Publications: publications.md
-  - Contact: index.md#contact
+
 plugins:
   - search
   - bibtex:
-      bib_file: "docs/publications.bib"
-      layout: "apa"   # or "plain" / "chicago" etc.
-extra_css:
-  - 'stylesheets/extra.css'   # optional
+      bib_file: docs/publications.bib
+      cite_style: apa
+      # layout: true  # remove if your plugin version does not support "layout"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/tommasoisi
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/tommaso-isidori
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
