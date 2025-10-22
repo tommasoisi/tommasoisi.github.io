@@ -1,7 +1,8 @@
 site_name: "Tommaso Isidori"
 site_description: "Experimental Physicist & Data Acquisition Engineer"
 site_author: "Tommaso Isidori"
-site_url: "https://tommasoisi.github.io/tommasoisi.github.io/"
+site_url: "https://tommasoisi.github.io/"
+
 
 theme:
   name: material
