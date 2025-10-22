@@ -1,0 +1,24 @@
+site_name: Tommaso Isidori
+site_description: Experimental Physicist & Data Acquisition Engineer
+repo_url: https://github.com/tommasoisi/tommasoisi.github.io
+theme:
+  name: material
+  palette:
+    primary: 'red'
+    accent: 'amber'
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+nav:
+  - Home: index.md
+  - CV: cv.md
+  - Publications: publications.md
+  - Contact: index.md#contact
+plugins:
+  - search
+  - bibtex:
+      bib_file: "docs/publications.bib"
+      layout: "apa"   # or "plain" / "chicago" etc.
+extra_css:
+  - 'stylesheets/extra.css'   # optional
